@@ -112,20 +112,6 @@ Note that breakpoint debugging in `wrangler dev` using `--remote` could extend W
 
 {{</Aside>}}
 
-## Test Workers
-
-### Integration testing
-
-Wrangler offers an experimental API, `unstable_dev`, that will allow you to start a server for integration testing.
-
-For more information and examples, refer to the [`unstable_dev` guide](/workers/wrangler/api/#unstable_dev).
-
-### Advanced local testing via Miniflare
-
-[Miniflare](https://github.com/cloudflare/miniflare/blob/v3.20231016.0/packages/miniflare/README.md) is a simulator for developing and testing Workers. It supports simulating and mocking resources like: KV, Durable Objects, R2, D1, and Queues.
-
-Miniflare is fully local, and is built on top of the Workers runtime, [`workerd`](https://github.com/cloudflare/workerd) to ensure that local behavior accurately reflects production. All of this makes it a great tool for writing tests or advanced use cases.
-
 ## Related resources
 
 * [Log from Workers](/workers/observability/log-from-workers/) - Access logs and exceptions for your Workers using the dashboard or [`wrangler tail`](/workers/wrangler/commands/#tail).
